@@ -38,46 +38,75 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-      <div class="hero-container">
+      <!-- Animated background elements -->
+      <div class="hero-bg-elements">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-shape shape-3"></div>
+        <div class="hero-shape shape-4"></div>
+      </div>
+
+      <div class="hero-container full-width">
         <div class="hero-content">
+          <div class="hero-intro-badge">Welcome to my portfolio</div>
           <h1 class="hero-title">
             Hi, I'm <span class="highlight">Pradesh Gwachha</span>
           </h1>
-          <p class="hero-subtitle">Software Engineer & Full-Stack Developer</p>
+          <p class="hero-subtitle">Software Engineer</p>
           <p class="hero-description">
-            Passionate about creating innovative mobile and web applications
-            with expertise in Flutter, React, Node.js, and modern development
-            technologies.
+            I'm a detail-oriented Software Engineer passionate about crafting
+            elegant, user-centered solutions. With expertise across the full
+            stack development, I transform complex challenges into clean,
+            efficient, and scalable applications. My approach combines technical
+            excellence with creative problem-solving to build software that
+            makes a meaningful impact.
           </p>
           <div class="hero-buttons">
-            <a href="#contact" class="btn btn-primary">Get In Touch</a>
-            <a href="#projects" class="btn btn-secondary">View My Work</a>
+            <button
+              class="btn btn-primary"
+              onclick="window.open('./assets/Pradesh.pdf')"
+            >
+              Download Resume
+            </button>
           </div>
           <div class="social-links">
-            <a href="mailto:pradesh248@gmail.com" class="social-link">
+            <a
+              href="mailto:pradesh248@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
               <i class="fas fa-envelope"></i>
             </a>
             <a
               href="https://linkedin.com/in/pradesh-gwachha"
               class="social-link"
+              aria-label="LinkedIn"
             >
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://github.com/pradesh" class="social-link">
+            <a
+              href="https://github.com/pradesh"
+              class="social-link"
+              aria-label="GitHub"
+            >
               <i class="fab fa-github"></i>
             </a>
           </div>
-        </div>
-        <div class="hero-image">
-          <div class="profile-card">
-            <div class="profile-photo">
-              <i class="fas fa-user"></i>
+
+          <!-- Tech stack icons -->
+          <div class="tech-stack">
+            <div class="tech-stack-title">My Tech Stack</div>
+            <div class="tech-icons">
+              <i class="fab fa-react" title="React"></i>
+              <i class="fab fa-node-js" title="Node.js"></i>
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fab fa-python" title="Python"></i>
+              <i class="fab fa-java" title="Java"></i>
             </div>
           </div>
         </div>
-      </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
       </div>
     </section>
 
@@ -230,7 +259,9 @@
             <div class="project-header">
               <h3>E-commerce Mobile App</h3>
               <div class="project-links">
-                <a href="#" class="project-link"
+                <a
+                  href="https://github.com/santoshghimire007/MajorProject_Ecommerce"
+                  class="project-link"
                   ><i class="fab fa-github"></i
                 ></a>
               </div>
@@ -251,7 +282,9 @@
             <div class="project-header">
               <h3>JWT User Authentication System</h3>
               <div class="project-links">
-                <a href="#" class="project-link"
+                <a
+                  href="https://github.com/Pradesh101/mern-auth-system"
+                  class="project-link"
                   ><i class="fab fa-github"></i
                 ></a>
               </div>
@@ -274,7 +307,7 @@
             <div class="project-header">
               <h3>Healthcare Platform</h3>
               <div class="project-links">
-                <a href="#" class="project-link"
+                <a href="https://www.cognerahealth.ai/" class="project-link"
                   ><i class="fab fa-github"></i
                 ></a>
               </div>
@@ -315,10 +348,6 @@
               <div class="contact-item">
                 <i class="fas fa-phone"></i>
                 <span>334-434-6544</span>
-              </div>
-              <div class="contact-item">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
               </div>
             </div>
           </div>
