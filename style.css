@@ -252,7 +252,67 @@ body {
   animation-delay: -15s;
 }
 
+/* Tech Stack Styles */
+.tech-stack {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech-stack-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.tech-icons i,
+.tech-icon {
+  font-size: 2.5rem;
+  transition: all var(--transition-normal);
+  opacity: 0.7;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icons i:hover,
+.tech-icon:hover {
+  transform: translateY(-5px) scale(1.1);
+  opacity: 1;
+}
+
+/* Flutter icon styles */
+.flutter-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flutter-icon svg {
+  transition: all var(--transition-normal);
+}
+
+.flutter-icon:hover svg {
+  filter: drop-shadow(0 0 4px rgba(2, 86, 155, 0.4));
+}
+
 /* Tech stack icons colors */
+
 .fa-react {
   color: #61dafb;
 }

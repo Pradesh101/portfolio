@@ -320,19 +320,11 @@ formStyles.textContent = `
 `;
 document.head.appendChild(formStyles);
 
-// Enhanced typing animation with cursor effect
+// Enhanced typing animation without cursor
 function typeWriter(element, text, speed = 100) {
   let i = 0;
   element.innerHTML = "";
   element.style.position = "relative";
-  
-  // Create cursor element
-  const cursor = document.createElement('span');
-  cursor.className = 'typing-cursor';
-  cursor.innerHTML = '|';
-  cursor.style.position = "relative";
-  cursor.style.animation = "blink 1s step-end infinite";
-  element.parentNode.appendChild(cursor);
 
   function type() {
     if (i < text.length) {
@@ -347,48 +339,17 @@ function typeWriter(element, text, speed = 100) {
         i++;
       }
       
-      // Position cursor after the current text
-      const rect = element.getBoundingClientRect();
-      cursor.style.marginLeft = "5px";
-      
       setTimeout(type, speed);
-    } else {
-      // Keep cursor blinking at the end
-      setTimeout(() => {
-        cursor.style.animation = "blink 1s step-end infinite";
-      }, 1000);
     }
   }
 
   type();
   
-  // Add cursor animation style
-  const cursorStyle = document.createElement('style');
-  cursorStyle.textContent = `
-    @keyframes blink {
-      from, to { opacity: 1; }
-      50% { opacity: 0; }
-    }
-    
-    .typing-cursor {
-      color: var(--primary-color);
-      font-weight: 700;
-    }
-  `;
-  document.head.appendChild(cursorStyle);
+  // No cursor style needed
 }
 
-// Initialize enhanced typing animation with delay
-window.addEventListener("load", () => {
-  // Wait a bit to let the page render first
-  setTimeout(() => {
-    const heroTitle = document.querySelector(".hero-title");
-    if (heroTitle) {
-      const originalText = heroTitle.textContent;
-      typeWriter(heroTitle, originalText, 60);
-    }
-  }, 500);
-});
+// Typing animation removed for hero title as requested
+// No initialization needed for the hero title to keep it simple
 
 // Skill tags hover effect
 document.querySelectorAll(".skill-tag").forEach((tag) => {
